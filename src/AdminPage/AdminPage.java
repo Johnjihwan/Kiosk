@@ -31,5 +31,11 @@ class AdminPage {
         } else {
             System.out.println("Cancelled");
         }
+
+//        value를 배열로 반환한 값.
+        String[] value = {(String) combo.getSelectedItem(), field1.getText(), field2.getText()};
+        for(int i=0; i<value.length; i++){
+            System.out.println(value[i]);
+        }
     }
 }

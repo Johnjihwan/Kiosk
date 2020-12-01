@@ -3,10 +3,16 @@ package UserInterface;
 import java.awt.*;
 
 public class UserPage {
+
     private Frame fr;
 
     public UserPage (String str){
         initialize(str);
+    }
+
+    public static void main(String[] args) {
+        UserPage userpage = new UserPage("상품목록");
+        userpage.fr.setVisible(true);
     }
 
     private void initialize(String str) {
@@ -29,10 +35,5 @@ public class UserPage {
         bt3.setSize(100,100);
         bt4.setSize(100,100);
 
-    }
-
-    public static void main(String[] args) {
-        UserPage userpage = new UserPage("상품목록");
-        userpage.fr.setVisible(true);
     }
 }
