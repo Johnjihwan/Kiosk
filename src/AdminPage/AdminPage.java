@@ -3,8 +3,9 @@ package AdminPage;
 import java.awt.GridLayout;
 import javax.swing.*;
 
-class AdminPage {
-
+public class AdminPage {
+//    클래스의 전역 변수로 최종 value를 선언
+    public static String value;
     public static void main(String[] args) {
 //        아이템 항목 정의
         String[] items = {"정식", "디저트", "음료", "추가상품"};
@@ -22,20 +23,20 @@ class AdminPage {
         panel.add(field2);
 
 //        결과 값 console로 반환.
+//        result 정의
         int result = JOptionPane.showConfirmDialog(null, panel, "Test",
                 JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
         if (result == JOptionPane.OK_OPTION) {
-            System.out.println(combo.getSelectedItem()
+//            value에 우항을 저장
+            value = combo.getSelectedItem()
                     + " " + field1.getText()
-                    + " " + field2.getText());
+                    + " " + field2.getText();
+//            value를 출력.
+            System.out.println(value);
         } else {
-            System.out.println("Cancelled");
-        }
-
-//        value를 배열로 반환한 값.
-        String[] value = {(String) combo.getSelectedItem(), field1.getText(), field2.getText()};
-        for(int i=0; i<value.length; i++){
-            System.out.println(value[i]);
+//            cancle btn 눌렀을 때 위와 같이 print
+            value = "Cancelled";
+            System.out.println(value);
         }
     }
 }
