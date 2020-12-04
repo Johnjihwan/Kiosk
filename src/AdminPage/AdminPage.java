@@ -1,15 +1,13 @@
 package AdminPage;
 
-import UserPage.UserInterface;
-
-import java.awt.GridLayout;
-import java.util.ArrayList;
-import java.util.List;
 import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
 
-public class AdminPage {
-//    클래스의 전역 변수로 최종 value를 선언
-    public static String value;
+public class AdminPage extends Product{
+    //    클래스의 전역 변수로 최종 value를 선언.
+    public static ArrayList<String> value = new ArrayList<String>();
+
     public static void main(String[] args) {
 //        아이템 항목 정의
         String[] items = {"정식", "디저트", "음료", "추가상품"};
@@ -32,17 +30,18 @@ public class AdminPage {
                 JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
         if (result == JOptionPane.OK_OPTION) {
 //            value에 우항을 저장
-            value = combo.getSelectedItem()
-                    + " " + field1.getText()
-                    + " " + field2.getText();
+            value.add((String) combo.getSelectedItem());
+            value.add(field1.getText());
+            value.add(field2.getText());
 //            value를 출력.
             System.out.println(value);
         } else {
 //            cancle btn 눌렀을 때 위와 같이 print
-            value = "Cancelled";
+            value.add("Cancelled");
             System.out.println(value);
         }
-
-        System.out.println(UserInterface.product);
+        CommodityCategory = value.get(0);
+        ProductName = value.get(1);
+        ProductCost = value.get(2);
     }
 }
