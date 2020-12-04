@@ -11,4 +11,5 @@
 >개발을 하기 위해서 참고한 자료 입니다.
 ```
 git: https://github.com/ayaysir/pseudo-kiosk-haksik
+https://m.blog.naver.com/PostView.nhn?blogId=roropoly1&logNo=220990381268&proxyReferer=https:%2F%2Fwww.google.com%2F
 ```
