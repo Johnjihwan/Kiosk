@@ -4,13 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class AdminPage extends Product{
+public class AdminPage{
     //    클래스의 전역 변수로 최종 value를 선언.
     public static ArrayList<String> value = new ArrayList<String>();
 
     public static void main(String[] args) {
 //        아이템 항목 정의
-        String[] items = {"정식", "디저트", "음료", "추가상품"};
+        String[] items = {"올데이킹", "단품", "음료", "추가상품"};
         JComboBox combo = new JComboBox(items);
         JTextField field1 = new JTextField("상품명을 입력하세요");
         JTextField field2 = new JTextField("가격을 입력하세요");
@@ -40,8 +40,5 @@ public class AdminPage extends Product{
             value.add("Cancelled");
             System.out.println(value);
         }
-        CommodityCategory = value.get(0);
-        ProductName = value.get(1);
-        ProductCost = value.get(2);
     }
 }
