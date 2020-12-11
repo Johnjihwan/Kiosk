@@ -1,3 +1,5 @@
+package Setting;
+
 import java.sql.*;
 
 public class HelloWorld {
@@ -19,7 +21,7 @@ public class HelloWorld {
 
         // 2.연결
         try {
-            con = DriverManager.getConnection("jdbc:mysql://" + server + "/" + database + "true&useSSL=false", user_name, password);
+            con = DriverManager.getConnection("jdbc:mysql://" + server + "/" + database + "?useSSL=false", user_name, password);
             System.out.println("정상적으로 연결되었습니다.");
         } catch(SQLException e) {
             System.err.println("con 오류:" + e.getMessage());
