@@ -1,6 +1,6 @@
 # Kiosk
 **Kiosk database setting**
-> stack: JDBC <br>
+> Stack: JDBC <br>
 > DBMS: Mysql(Oracle)
 ------
 **How to use Mysql**
