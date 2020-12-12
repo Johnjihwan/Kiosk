@@ -12,4 +12,11 @@
 ```
 git: https://github.com/ayaysir/pseudo-kiosk-haksik
 https://m.blog.naver.com/PostView.nhn?blogId=roropoly1&logNo=220990381268&proxyReferer=https:%2F%2Fwww.google.com%2F
+https://121202.tistory.com/25
+https://pat.im/624
+https://jins-dev.tistory.com/entry/MySql-%EA%B8%B0%EB%B3%B8-%EC%BF%BC%EB%A6%AC%EB%AC%B8%EB%93%A4-%EC%A0%95%EB%A6%AC
+```
+> Using Stacks
+```
+Java(swing), Mysql, JDBC(oracle)
 ```
