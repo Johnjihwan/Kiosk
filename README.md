@@ -19,4 +19,5 @@ https://jins-dev.tistory.com/entry/MySql-%EA%B8%B0%EB%B3%B8-%EC%BF%BC%EB%A6%AC%E
 > Using Stacks
 ```
 Java(swing), Mysql, JDBC(oracle)
+JDBC에 대한 code는 JDBC branch에 있습니다.
 ```
